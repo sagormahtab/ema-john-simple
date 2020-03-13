@@ -6,6 +6,7 @@ import './Product.css'
 
 const Product = (props) => {
     console.log(props);
+    //This line is written for "ailshemi" purpose. we don't want to write props.product.name, props.product.stock every time. so we've destructed the object. This is not mandatory.
     const { img, name, seller, price, stock } = props.product;
     return (
         <div className="product">
