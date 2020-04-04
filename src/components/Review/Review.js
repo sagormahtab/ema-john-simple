@@ -23,7 +23,7 @@ const Review = () => {
         //taking the key'th indices value from the savedCart object to an array. If we write object[key] then we get the value of the key.
         //const counts = productKeys.map(key => savedCart[key]);
         console.log(productKeys);
-        fetch('http://localhost:4200/getProductsByKey', {
+        fetch('https://fierce-woodland-01280.herokuapp.com/getProductsByKey', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
